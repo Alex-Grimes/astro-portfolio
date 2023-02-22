@@ -2,7 +2,7 @@ body {
 	font-family: system-ui sans-serif;
 	margin: auto;
 	padding: 20px;
-	max-width: 65ch;
+	max-width: 100ch;
 	text-align: left;
 	background-color: #0e1114;
 	word-wrap: break-word;

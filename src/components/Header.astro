@@ -1,6 +1,7 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+import {} from '@fortawesome/fontawesome-free';
 ---
 
 <header>
@@ -17,6 +18,64 @@ import { SITE_TITLE } from '../consts';
     </HeaderLink>
   </nav>
 </header>
+
+<div class='hidden lg:flex fixed flex-col top-[35%] left-0'>
+  <ul>
+    <li
+      class='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-0px] duration-300 bg-blue-600'
+    >
+      <a
+        class='flex justify-between items-center w-full text-gray-300'
+        href='https://www.linkedin.com/in/agrimes-sc/'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        Linkedin<i class='fa-brands fa-linkedin w-9'></i>
+      </a>
+    </li>
+
+    <li
+      class='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-0px] duration-300 bg-[#333333]'
+    >
+      <a
+        class='flex justify-between items-center w-full text-gray-300'
+        href='https://github.com/Alex-Grimes'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        GitHub<i class='fa-brands fa-github w-9'> </i>
+      </a>
+    </li>
+
+    <li
+      class='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-0px] duration-300 bg-blue-600'
+    >
+      <a
+        class='flex justify-between items-center w-full text-gray-300'
+        href='mailto:alexgrimes.se@gmail.com'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        Email<i class='fa-solid fa-envelope w-9'></i>
+      </a>
+    </li>
+
+    {
+      /* <li class="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+      <a
+        class="flex justify-between items-center w-full text-gray-300"
+        href="/" target="_blank" rel="noopener noreferrer"
+      >
+        Resume <BsFillPersonLinesFill size={30} />
+      </a>
+</li> */
+    }
+  </ul>
+</div>
+
+<script src='https://kit.fontawesome.com/0ec89d2676.js' crossorigin='anonymous'
+></script>
+
 <style>
   header {
     margin: 0em 0 2em;

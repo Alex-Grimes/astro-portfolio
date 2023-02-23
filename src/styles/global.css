@@ -1,8 +1,8 @@
 body {
 	font-family: system-ui sans-serif;
 	margin: auto;
-	padding: 20px;
-	max-width: 100ch;
+	/* padding: 20px; */
+	/* max-width: 100ch; */
 	text-align: left;
 	background-color: #0e1114;
 	word-wrap: break-word;
@@ -64,4 +64,9 @@ blockquote {
 .sidebar{
 	float: left;
 
+}
+
+.hero-image {
+	/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../src/assets/красотищатокакая-code.gif");
 }

@@ -1,23 +1,46 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
-import {} from '@fortawesome/fontawesome-free';
 ---
 
-<header>
-  <h2>
-    {SITE_TITLE}
-  </h2>
-  <nav>
-    <HeaderLink href='/'>Home</HeaderLink>
-    <HeaderLink href='/blog'>Blog</HeaderLink>
-    <HeaderLink href='/about'>About</HeaderLink>
-    <!-- <HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink> -->
-    <HeaderLink href='https://github.com/alex-grimes' target='_blank'>
-      GitHub
-    </HeaderLink>
-  </nav>
-</header>
+<div
+  class='fixed w-full h-[80px] flex justify-between items-center px-4 bg-black'
+>
+  <ul class='hidden md:flex'>
+    <li class='px-5'>
+      <HeaderLink href='/'>Home</HeaderLink>
+    </li>
+    <li class='px-5'>
+      <HeaderLink href='/about'>About</HeaderLink>
+    </li>
+    <li class='px-5'>
+      <HeaderLink href='/blog'>Blog</HeaderLink>
+    </li>
+  </ul>
+</div>
+<!-- <button onclick='handleClick()' class='md:hidden z-10 w-36'>
+    {!nav ? <i class='fa-solid fa-bars' /> : <i class='fa-solid fa-x' />}
+  </button>
+  <i class='fa-solid fa-bars hamburger'></i>
+
+  <ul
+    class={!nav
+      ? 'hidden'
+      : 'absolute top-0 left-0 w-full h-screen bg-black flex flex-col justify-center items-center'}
+  >
+    <li class='py-6 text-4xl'>
+      {' '}
+      <a onclick='handleClick()' href='\home'> Home</a>
+    </li>
+    <li class='py-6 text-4xl'>
+      {' '}
+      <a onclick='handleClick()' href='\about'> About</a>
+    </li>
+    <li class='py-6 text-4xl'>
+      {' '}
+      <a onclick='handleClick()' href='\blog'> Skills</a>
+    </li>
+  </ul>
+</header> -->
 
 <div class='hidden lg:flex fixed flex-col top-[35%] left-0'>
   <ul>
@@ -60,27 +83,18 @@ import {} from '@fortawesome/fontawesome-free';
       </a>
     </li>
 
-    {
-      /* <li class="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-      <a
-        class="flex justify-between items-center w-full text-gray-300"
-        href="/" target="_blank" rel="noopener noreferrer"
+    <li
+      class='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-0px] duration-300 bg-[#333333]'
+    >
+      <HeaderLink
+        class='flex justify-between items-center w-full pl-1 text-gray-300'
+        href='/blog'
       >
-        Resume <BsFillPersonLinesFill size={30} />
-      </a>
-</li> */
-    }
+        Blog<i class='fa-solid fa-blog w-9'></i>
+      </HeaderLink>
+    </li>
   </ul>
 </div>
 
 <script src='https://kit.fontawesome.com/0ec89d2676.js' crossorigin='anonymous'
 ></script>
-
-<style>
-  header {
-    margin: 0em 0 2em;
-  }
-  h2 {
-    margin: 0.5em 0;
-  }
-</style>

@@ -3,47 +3,42 @@ import HeaderLink from './HeaderLink.astro';
 ---
 
 <div
-  class='fixed w-full h-[80px] flex justify-between items-center px-4 bg-black'
+  class='fixed w-full h-[80px] flex justify-between items-center px-2 bg-black'
 >
-  <ul class='hidden md:flex'>
-    <li class='px-5'>
+  <ul class='flex md:hidden'>
+    <li class='px-2'>
       <HeaderLink href='/'>Home</HeaderLink>
     </li>
-    <li class='px-5'>
+    <li class='px-2'>
       <HeaderLink href='/about'>About</HeaderLink>
     </li>
-    <li class='px-5'>
+    <li class='px-2'>
       <HeaderLink href='/blog'>Blog</HeaderLink>
+    </li>
+    <li class='px-2'>
+      <HeaderLink href='/blog'>Github</HeaderLink>
+    </li>
+    <li class='px-2'>
+      <HeaderLink href='/blog'>LinkedIn</HeaderLink>
+    </li>
+    <li class='px-2'>
+      <HeaderLink href='/blog'>Email</HeaderLink>
     </li>
   </ul>
 </div>
-<!-- <button onclick='handleClick()' class='md:hidden z-10 w-36'>
-    {!nav ? <i class='fa-solid fa-bars' /> : <i class='fa-solid fa-x' />}
-  </button>
-  <i class='fa-solid fa-bars hamburger'></i>
-
-  <ul
-    class={!nav
-      ? 'hidden'
-      : 'absolute top-0 left-0 w-full h-screen bg-black flex flex-col justify-center items-center'}
-  >
-    <li class='py-6 text-4xl'>
-      {' '}
-      <a onclick='handleClick()' href='\home'> Home</a>
-    </li>
-    <li class='py-6 text-4xl'>
-      {' '}
-      <a onclick='handleClick()' href='\about'> About</a>
-    </li>
-    <li class='py-6 text-4xl'>
-      {' '}
-      <a onclick='handleClick()' href='\blog'> Skills</a>
-    </li>
-  </ul>
-</header> -->
 
 <div class='hidden lg:flex fixed flex-col top-[35%] left-0'>
   <ul>
+    <li
+      class='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-0px] duration-300 bg-[#333333]'
+    >
+      <HeaderLink
+        class='flex justify-between items-center w-full pl-1 text-gray-300'
+        href='/'
+      >
+        Home<i class='fa-solid fa-house w-9'></i>
+      </HeaderLink>
+    </li>
     <li
       class='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-0px] duration-300 bg-[#31748f]'
     >
@@ -92,6 +87,18 @@ import HeaderLink from './HeaderLink.astro';
       >
         Blog<i class='fa-solid fa-blog w-9'></i>
       </HeaderLink>
+    </li>
+    <li
+      class='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-0px] duration-300 bg-[#31748f]'
+    >
+      <a
+        class='flex justify-between items-center w-full pl-1 text-gray-300'
+        href='/about'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        About Me<i class='fa-solid fa-info w-9'></i>
+      </a>
     </li>
   </ul>
 </div>

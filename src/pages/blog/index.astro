@@ -12,7 +12,7 @@ const posts = (await getCollection('blog')).sort(
 
 <!DOCTYPE html>
 <html lang='en'>
-  <head class='py-24'>
+  <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style>
       ul {
@@ -34,8 +34,8 @@ const posts = (await getCollection('blog')).sort(
   </head>
   <body class='h-full'>
     <Header />
-    <main>
-      <section class='flex justify-center content-center'>
+    <main class='pt-24 content-center'>
+      <section class='flex justify-center'>
         <ul>
           {
             posts.map((post) => (
@@ -54,5 +54,6 @@ const posts = (await getCollection('blog')).sort(
         </ul>
       </section>
     </main>
+    <Footer />
   </body>
 </html>

@@ -1,107 +1,39 @@
 ---
-title: "Markdown Style Guide"
-description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
-pubDate: "Jul 01 2022"
+title: "What Framework is right"
+description: "A blog going over the three major frameworks for JS"
+pubDate: "Feb 01 2022"
 heroImage: "/placeholder-hero.jpg"
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+When it comes to building modern web applications, developers have a wide range of choices in terms of frameworks and libraries. Three of the most popular options are Vue, React, and Angular. In this blog post, we'll compare these three frameworks and explore the similarities and differences between them.
 
-## Headings
+Vue
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+Vue is a progressive JavaScript framework for building user interfaces. It was developed by Evan You in 2014 and has gained popularity for its simplicity, flexibility, and ease of use. Vue is often compared to React in terms of its performance and scalability, but it has a smaller learning curve and is more approachable for beginners.
 
-# H1
+Some of the key features of Vue include a reactive data binding system, a virtual DOM for efficient updates, and a component-based architecture that allows for modular development. Vue also offers a CLI tool for scaffolding new projects, as well as a comprehensive documentation that makes it easy to get started.
 
-## H2
+React
 
-### H3
+React is a JavaScript library for building user interfaces. It was developed by Facebook in 2011 and has become one of the most popular options for building modern web applications. React is known for its high performance, flexibility, and scalability, and it has a large and active community of developers.
 
-#### H4
+One of the key features of React is its virtual DOM, which allows for efficient updates and improves performance. React also uses a component-based architecture, which makes it easy to reuse code and build modular applications. React offers a wide range of third-party libraries and tools, including Redux for state management, React Native for building mobile applications, and Next.js for server-side rendering.
 
-##### H5
+Angular
 
-###### H6
+Angular is a TypeScript-based web application framework developed by Google. It was first released in 2010 as AngularJS, but was rewritten in TypeScript and released as Angular in 2016. Angular is known for its comprehensive set of features, including a powerful CLI tool, a robust set of built-in directives and services, and a complete set of testing tools.
 
-## Paragraph
+Angular uses a component-based architecture, similar to Vue and React, but it also includes a powerful set of features for building complex applications, such as dependency injection, reactive forms, and RxJS for reactive programming. Angular also includes a powerful set of tools for building and testing applications, including Protractor for end-to-end testing and Karma for unit testing.
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+Comparing Vue, React, and Angular
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+When it comes to comparing Vue, React, and Angular, there are several similarities and differences to consider. All three frameworks use a component-based architecture and support reactive programming, making them well-suited for building complex and scalable applications. However, there are also some key differences to consider:
 
-## Images
+    Learning curve: Vue has the smallest learning curve of the three, making it a good choice for beginners. React and Angular have a steeper learning curve, but offer more comprehensive sets of features.
+    Performance: React and Vue are known for their high performance and efficient updates, thanks to their virtual DOMs. Angular is also performant, but its change detection mechanism is not as efficient as React and Vue.
+    Ecosystem: React has the largest and most active ecosystem of the three, with a wide range of third-party libraries and tools. Vue and Angular both have active ecosystems, but they are not as extensive as React's.
+    Community: Vue and React both have large and active communities, with a wide range of resources and support available. Angular also has a large community, but it is not as active as Vue and React.
 
-![This is a placeholder image description](/placeholder-social.jpg)
+Conclusion
 
-## Blockquotes
-
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
-
-#### Blockquote without attribution
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-
-#### Blockquote with attribution
-
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-
-## Code Blocks
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-
-## List Types
-
-#### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-#### Unordered List
-
-- List item
-- Another item
-- And another item
-
-#### Nested list
-
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+In conclusion, Vue, React, and Angular are all excellent choices for building modern web applications. Each framework has its own set of strengths and weaknesses, and developers should consider their own needs and preferences when choosing a framework. Vue is a good choice for beginners and those looking for a simple and flexible framework, while React is well-suited for complex and

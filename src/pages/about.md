@@ -3,7 +3,7 @@ layout: "../layouts/BlogPost.astro"
 title: "About Me"
 description: "This Is a short concise description of me"
 updatedDate: "August 08 2022"
-heroImage: "/placeholder-about.jpg"
+heroImage: "https://media.giphy.com/media/k81NasbqkKA5HSyJxN/giphy.gif"
 ---
 
 Hello! I am a highly motivated and skilled software engineer with a passion for technology and problem-solving. I have 5 years of experience in the industry, during which I have honed my skills in web development, industrial software, networking technologies, and software security. I have a proven track record of delivering high-quality software solutions on time and within budget, and I am always seeking new challenges and opportunities to expand my knowledge and expertise.
